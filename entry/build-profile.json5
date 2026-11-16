@@ -1,0 +1,45 @@
+{
+  "apiType": "stageMode",
+  "buildOption": {
+    "resOptions": {
+      "copyCodeResource": {
+        "enable": false
+      }
+    },
+    "arkOptions": {
+      "buildProfileFields": {
+        "HEALTH_BASE": "https://hihealthbase-dre.things.dbankcloud.cn",
+        "CONSENT_BASE": "https://health-api.cloud.huawei.com",
+        "OAUTH_BASE": "https://oauth-login.cloud.huawei.com"
+      }
+    }
+  },
+  "buildOptionSet": [
+    {
+      "name": "release",
+      "arkOptions": {
+        "obfuscation": {
+          "ruleOptions": {
+            "enable": false,
+            "files": [
+              "./obfuscation-rules.txt"
+            ]
+          }
+        },
+        "buildProfileFields": {
+          "HEALTH_BASE": "https://hihealthbase-dre.things.dbankcloud.cn",
+          "CONSENT_BASE": "https://health-api.cloud.huawei.com",
+          "OAUTH_BASE": "https://oauth-login.cloud.huawei.com"
+        }
+      }
+    },
+  ],
+  "targets": [
+    {
+      "name": "default"
+    },
+    {
+      "name": "ohosTest",
+    }
+  ]
+}
