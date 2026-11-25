@@ -2,7 +2,7 @@
 
 # How To Use QR Health Login Standalone
 
-A HarmonyOS NEXT watch application that signs in to Huawei Health Kit with a QR code and reads the user's step data. The watch has no keyboard, so the user scans the QR code with a phone and approves there. The app uses the OAuth 2.0 Device Code flow of Huawei Account Kit and runs fully on the watch, with no backend. Built with ArkTS and ArkUI, the project shows the full token lifecycle: getting a device code, polling for the token, renewing it with the refresh token and signing out by revoking consent. The MVVM structure keeps Huawei API calls in a separate service layer, so it is easy to add more health data types such as heart rate or sleep. Useful for developers who need Health Kit data on a watch without building a server.
+A HarmonyOS watch application that signs in to Huawei Health Kit with a QR code and reads the user's step data. The watch has no keyboard, so the user scans the QR code with a phone and approves there. The app uses the OAuth 2.0 Device Code flow of Huawei Account Kit and runs fully on the watch, with no backend. Built with ArkTS and ArkUI, the project shows the full token lifecycle: getting a device code, polling for the token, renewing it with the refresh token and signing out by revoking consent. The MVVM structure keeps Huawei API calls in a separate service layer, so it is easy to add more health data types such as heart rate or sleep. Useful for developers who need Health Kit data on a watch without building a server.
 
 # Preview
 
@@ -27,7 +27,7 @@ A HarmonyOS NEXT watch application that signs in to Huawei Health Kit with a QR 
 # Tech Stack
 
 * Languages: ArkTS, ArkUI
-* Frameworks: HarmonyOS NEXT SDK
+* Frameworks: HarmonyOS SDK
 * Tools: DevEco Studio NEXT
 * Libraries:
     * `@kit.NetworkKit`
@@ -63,7 +63,7 @@ A HarmonyOS NEXT watch application that signs in to Huawei Health Kit with a QR 
 
 ## Supported Devices
 
-* Huawei Watch (HarmonyOS NEXT wearables)
+* Huawei Watch (HarmonyOS wearables)
 
 ## Notes
 
